@@ -21,7 +21,11 @@ export const ContactItem = ({contactData}) => {
 };
 
 ContactItem.propTypes = {
-  contactData: PropTypes.object
+  contactData: PropTypes.shape({
+    name: PropTypes.string,
+    number: PropTypes.string,
+    id: PropTypes.string,
+  })
 };
 
 
