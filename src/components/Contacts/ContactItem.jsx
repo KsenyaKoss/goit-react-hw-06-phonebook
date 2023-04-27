@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux'; 
 import { deleteContact } from 'Redux/phoneBookSlice';
 
-export const ContactItem = ({ contactData}) => {
+export const ContactItem = ({contactData}) => {
   const { name, number, id } = contactData;
   const dispatch = useDispatch()
   return (
@@ -21,9 +21,7 @@ export const ContactItem = ({ contactData}) => {
 };
 
 ContactItem.propTypes = {
-  name: PropTypes.string,
-  number: PropTypes.number,
-  id: PropTypes.number,
+  contactData: PropTypes.object
 };
 
 
